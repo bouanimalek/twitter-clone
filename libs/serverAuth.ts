@@ -4,7 +4,10 @@ import prisma from "@/libs/prismadb";
 
 const serverAuth = async (req: NextApiRequest) => {
   const session = await getSession({ req });
+
   if (!session?.user?.email) {
+    console.log("my session:" + session);
+
     throw new Error("Not signed in");
   }
 
