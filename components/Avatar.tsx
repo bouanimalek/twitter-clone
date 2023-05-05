@@ -26,7 +26,7 @@ const Avatar: React.FC<AvatarProps> = ({ userId, isLarge, hasBorder }) => {
   ${hasBorder ? "border-4 border-black" : ""}
   ${isLarge ? "h-32" : "h-12"}
   ${isLarge ? "w-32" : "w-12"}
-  rounder-full hover:opacity-90
+  rounded-full hover:opacity-90
   transition cursor-pointer relative`}
     >
       <Image
